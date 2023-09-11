@@ -1,5 +1,7 @@
 const express = require("node:express")
 
+const suma = require("./suma.js")
+
 const app = express();
 
 const puerto = 8080
@@ -12,3 +14,5 @@ app.get("/",(req,res)=>{
     res.send("Holaaaa");
 })
 
+
+suma(3,5)
